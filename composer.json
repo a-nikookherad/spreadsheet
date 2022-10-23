@@ -1,8 +1,23 @@
 {
     "name": "nikookherad/excel",
+    "type": "library",
     "description": "for read and work with excel files",
     "require": {
         "php": ">=7.4",
         "phpoffice/phpspreadsheet": "^1.9"
-    }
+    },
+    "authors": [
+        {
+            "name": "Nikita Popov"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Excel\\": "src"
+        }
+    },
+    "keywords": [
+        "spreadsheet",
+        "excel"
+    ]
 }
