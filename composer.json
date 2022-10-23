@@ -3,6 +3,7 @@
     "type": "library",
     "description": "for read and work with excel files",
     "homepage": "https://github.com/ali-nikookherad/spreadsheet",
+    "license": "MIT",
     "require": {
         "php": ">=7.4",
         "phpoffice/phpspreadsheet": "^1.9"
