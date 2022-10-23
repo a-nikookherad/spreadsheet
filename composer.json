@@ -1,0 +1,8 @@
+{
+    "name": "nikookherad/excel",
+    "description": "for read and work with excel files",
+    "require": {
+        "php": ">=7.4",
+        "phpoffice/phpspreadsheet": "^1.9"
+    }
+}
