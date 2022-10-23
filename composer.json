@@ -1,14 +1,15 @@
 {
-    "name": "nikookherad/excel",
+    "name": "nikookherad/spreadsheet",
     "type": "library",
     "description": "for read and work with excel files",
+    "homepage": "https://github.com/ali-nikookherad/spreadsheet",
     "require": {
         "php": ">=7.4",
         "phpoffice/phpspreadsheet": "^1.9"
     },
     "authors": [
         {
-            "name": "Nikita Popov"
+            "name": "Ali Nikookherad"
         }
     ],
     "autoload": {
