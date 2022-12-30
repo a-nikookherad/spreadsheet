@@ -1,10 +1,13 @@
 <?php
 
-namespace App\Services\PDF\src;
+namespace Excel\Providers;
 
+use App\Services\Excel\src\Test;
+use Excel\Contracts\ExcelLogicInterface;
+use Excel\Logics\ExcelLogic;
 use Illuminate\Support\ServiceProvider;
 
-class AppServiceProvider extends ServiceProvider
+class ExcelServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -23,6 +26,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->app->bind("ExcelLogic", function () {
+            return resolve(ExcelLogic::class);
+        });
     }
 }
