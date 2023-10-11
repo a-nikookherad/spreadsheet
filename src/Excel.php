@@ -2,6 +2,7 @@
 
 namespace Excel;
 
+use Excel\Contracts\ExcelLogicInterface;
 use Excel\Logics\ExcelLogic;
 use Illuminate\Support\Facades\Facade;
 
@@ -14,10 +15,10 @@ use Illuminate\Support\Facades\Facade;
  * @method static array body()
  * @method static array records()
  */
-class ExcelFacade extends Facade
+class Excel extends Facade
 {
     public static function getFacadeAccessor()
     {
-        return "ExcelLogic";
+        return resolve(ExcelLogicInterface::class);
     }
 }

@@ -2,7 +2,9 @@
 
 namespace Excel\Logics;
 
-class ExcelLogic
+use Excel\Contracts\ExcelLogicInterface;
+
+class ExcelLogic implements ExcelLogicInterface
 {
     private array $rows = [];
     private array $header;

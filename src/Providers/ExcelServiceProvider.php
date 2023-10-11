@@ -2,7 +2,6 @@
 
 namespace Excel\Providers;
 
-use App\Services\Excel\src\Test;
 use Excel\Contracts\ExcelLogicInterface;
 use Excel\Logics\ExcelLogic;
 use Illuminate\Support\ServiceProvider;
@@ -16,7 +15,7 @@ class ExcelServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(ExcelLogicInterface::class, ExcelLogic::class);
     }
 
     /**
@@ -26,8 +25,6 @@ class ExcelServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->bind("ExcelLogic", function () {
-            return resolve(ExcelLogic::class);
-        });
+
     }
 }
