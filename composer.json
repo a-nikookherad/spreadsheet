@@ -1,7 +1,7 @@
 {
     "name": "nikookherad/spreadsheet",
     "type": "library",
-    "description": "for read and work with excel files",
+    "description": "This service is for easy work with Excel files",
     "homepage": "https://github.com/ali-nikookherad/spreadsheet",
     "license": "MIT",
     "require": {
